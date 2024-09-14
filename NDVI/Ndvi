@@ -1,0 +1,14 @@
+# Assuming you're working with a web app (e.g., Flask, Django), you can visualize the NDVI
+# This example uses matplotlib to plot NDVI.
+
+import rasterio
+import matplotlib.pyplot as plt
+
+# Simulate some NDVI data for plotting
+ndvi_data = np.random.random((512, 512))  # Replace with actual NDVI data
+
+# Plotting NDVI data
+plt.imshow(ndvi_data, cmap='RdYlGn')
+plt.colorbar(label='NDVI')
+plt.title('NDVI - Vegetation Health')
+plt.show()
